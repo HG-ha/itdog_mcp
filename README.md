@@ -44,11 +44,11 @@ playwright install chromium
 #### 使用预构建镜像
 
 ```bash
-# HTTP模式（将服务映射到本地8080端口）
-docker run -d --name itdog_mcp -p 8080:8080 yiminger/itdog_mcp:latest
+# HTTP模式（将服务映射到本地8000端口）
+docker run -d --name itdog_mcp -p 8000:8000 yiminger/itdog_mcp:latest
 
 # 指定自定义端口
-docker run -d --name itdog_mcp -p 9000:8080 yiminger/itdog_mcp:latest
+docker run -d --name itdog_mcp -p 9000:8000 yiminger/itdog_mcp:latest
 ```
 
 #### 自行构建Docker镜像
@@ -64,7 +64,7 @@ cd itdog_mcp
 docker build -t itdog_mcp .
 
 # 运行自建镜像
-docker run -d -p 8080:8080 itdog_mcp
+docker run -d -p 8000:8000 itdog_mcp
 ```
 
 ## 使用方法
@@ -74,7 +74,7 @@ docker run -d -p 8080:8080 itdog_mcp
 #### HTTP 模式（默认）
 
 ```bash
-python main.py --host 127.0.0.1 --port 8080
+python main.py --host 127.0.0.1 --port 8000
 ```
 
 #### stdio 模式（用于与 AI 代理直接集成）
@@ -87,7 +87,7 @@ python main.py --mode stdio
 
 - `--mode`: 运行模式，可选 `http` 或 `stdio`，默认为 `http`
 - `--host`: HTTP 模式下的绑定地址，默认为 `127.0.0.1`
-- `--port`: HTTP 模式下的端口号，默认为 `8080`
+- `--port`: HTTP 模式下的端口号，默认为 `8000`
 
 ### HTTP 模式下的接口
 

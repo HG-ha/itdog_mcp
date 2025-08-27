@@ -118,7 +118,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(
     title="ITDog MCP Server",
     description="使用itdog网站进行网络测速测试的MCP服务器",
-    version="0.1.0",
+    version="0.1.1",
     lifespan=lifespan
 )
 
@@ -336,7 +336,7 @@ async def root():
     """根路径信息"""
     return {
         "name": "ITDog MCP Server",
-        "version": "0.1.0",
+        "version": "0.1.1",
         "description": "使用itdog网站进行网络测速测试的MCP服务器",
         "endpoints": {
             "mcp": "/mcp",
@@ -361,7 +361,7 @@ async def get_info():
     
     return {
         "name": "ITDog MCP Server",
-        "version": "0.1.0",
+        "version": "0.1.1",
         "description": "使用itdog网站进行网络测速测试的MCP服务器",
         "endpoints": {
             "mcp": "/mcp",
@@ -493,7 +493,7 @@ async def process_mcp_request(data: dict) -> dict:
                     },
                     "serverInfo": {
                         "name": "itdog-mcp",
-                        "version": "0.1.0",
+                        "version": "0.1.1",
                         "description": "使用itdog网站进行网络测速测试的MCP服务器"
                     }
                 }
