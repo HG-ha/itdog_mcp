@@ -1,0 +1,15 @@
+[project]
+name = "itdog-mcp"
+version = "0.1.0"
+description = "The api interaction is achieved by automating the operation of itdog and then providing mcp services to the AI"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "bs4>=0.0.2",
+    "fastapi>=0.116.1",
+    "mcp>=1.13.1",
+    "playwright>=1.54.0",
+    "psutil>=7.0.0",
+    "pydantic>=2.11.7",
+    "uvicorn>=0.35.0",
+]

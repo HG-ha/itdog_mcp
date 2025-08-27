@@ -1,0 +1,8 @@
+uvicorn>=0.35.0
+playwright>=1.54.0
+fastapi-mcp
+psutil>=7.0.0
+pydantic>=2.11.7
+mcp>=1.13.1
+bs4>=0.0.2
+fastapi>=0.116.1
