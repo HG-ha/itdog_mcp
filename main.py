@@ -476,7 +476,7 @@ async def process_mcp_request(data: dict) -> dict:
             
         elif method == "initialize":
             client_info = params.get("clientInfo", {})
-            protocol_version = params.get("protocolVersion", "2024-11-05")
+            protocol_version = params.get("protocolVersion", "2025-08-27")
             capabilities = params.get("capabilities", {})
             
             logger.info(f"客户端信息: {client_info}")
@@ -487,7 +487,7 @@ async def process_mcp_request(data: dict) -> dict:
                 "jsonrpc": "2.0",
                 "id": request_id,
                 "result": {
-                    "protocolVersion": "2024-11-05",
+                    "protocolVersion": "2025-08-27",
                     "capabilities": {
                         "tools": {}
                     },
